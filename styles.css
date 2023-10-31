@@ -126,9 +126,57 @@ body {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 5rem 1fr;
+    padding: 1rem;
+    background-color: var(--main-color);
+    box-shadow: 3px 4px 6px;
 }
 
-.content {
-    grid-column: 2 / 3;
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
 }
+
+.profile p {
+    margin: 0;
+    width: 5.5rem;
+    justify-self: baseline;
+}
+
+.profile img {
+    width: 3rem;
+}
+
+.profile svg {
+    justify-self: end;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+
+.search-bar svg {
+    justify-self: center;
+}
+
+input[type="text"] {
+    border-radius: 0.9rem;
+    background-color: #dbdada;
+    border: none;
+    height: 1.2rem;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+    padding-left: 1rem;
+}
+
+
+/* .content {
+    grid-column: 2 / 3;
+} */
+
