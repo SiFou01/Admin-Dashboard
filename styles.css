@@ -225,6 +225,8 @@ button {
     grid-template-columns: 3fr 1fr;
     padding: 1.5rem;
     font-family: "Roboto", sans-serif;
+    column-gap: 2.5rem;
+    row-gap: 1rem;
 }
 
 .projects {
@@ -259,4 +261,23 @@ button {
 .card svg {
     align-self: end;
     justify-self: end;
+    cursor: pointer;
+}
+
+.announcements h3, .trending h3 {
+    margin: 0;
+    align-self: center;
+}
+
+.announcements, .trending {
+    display: grid;
+    grid-template-rows: 2rem;
+    gap: 1rem;
+}
+
+.text {
+    background-color: aliceblue;
+    box-shadow: 1px 1px 2px 1px;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
 }
