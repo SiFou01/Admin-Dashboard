@@ -89,7 +89,6 @@ body {
     display: inline;
     margin: 0.5rem;
     font-family: "Roboto", sans-serif;
-    cursor: pointer;
 }
 
 .logo {
@@ -98,6 +97,7 @@ body {
     gap: 0.7rem;
     margin-bottom: 2.5rem;
     padding-top: 1rem;
+    cursor: pointer;
 }
 
 .logo p {
@@ -106,7 +106,6 @@ body {
 
 .sidebar svg {
     color: var(--main-color);
-    cursor: pointer;
 }
 
 .nav {
@@ -117,6 +116,11 @@ body {
     display: flex;
     align-items: center;
     gap: 0.7rem;
+    cursor: pointer;
+}
+
+.nav div:hover {
+    text-decoration: underline aliceblue;
 }
 
 #settings {
@@ -235,6 +239,7 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     grid-template-rows: 2rem;
     gap: 1rem;
+    row-gap: 1.5rem;
 }
 
 .projects h3 {
@@ -276,7 +281,6 @@ button {
 }
 
 .text {
-    background-color: aliceblue;
     padding: 0.8rem;
     padding-left: 0.8rem;
     border-bottom: 1px solid #baa9a9
@@ -285,6 +289,9 @@ button {
 .parent {
     box-shadow: 3px 3px 6px;
     border-radius: 0.4rem;
+    background-color: var(--main-color);
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .text1 {
@@ -293,9 +300,18 @@ button {
 
 .text3 {
     border-radius: 0 0 0.4rem 0.4rem;
+    border: none;
 }
 
 h5 {
     font-size: 16px;
     margin: 0;
+}
+
+svg {
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
 }
